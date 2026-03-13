@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object-collection(pair) of keys(properties) and its values
+        //create an object - using literal ways and new keywords
+
+        let student={
+            name:"john",
+            age:23,
+            ismarried:false,
+            address:{
+                streetno:27,
+                area:"bijnaur",
+                pincode:226002,
+                city:"lucknow",
+            },
+            education:["10th","12th","b.tech"],
+            degree:"b.tech",
+            branch:"CSE",
+            year:2025,
+            getinfo:function(){
+                return"my current education is" + student.degree;            }
+        };
+        console.log(student.address.pincode);//object
+        console.log(student.education[2]);//array
+        console.log(student.getinfo());//function
+        console.log(typeof(student));
+
+        //find keys in object
+        console.log('name' in student);
+        //delete keys from object
+        console.log(delete student.name);
+        console.log(student);
+        //find length of object
+        let keyslength=object.keys(student);
+        console.log(keyslength.length);
+        //ierate keys of object using for loop
+        for(let i=0;i<keyslength.length;i++){
+            //console.log(student[keyslength[i]]);
+        }
+        //iterate keys of object using for..in loop
+        for(let x in student){
+            console.log(student[x]);
+        }
+
+        //create object using new keyword
+        let myinfo = new object();
+        myinfo.name="prabhat";
+        myinfo.age=23;
+        myinfo.address="ghaziabad";
+        myinfo.mobile=8840776579;
+        myinfo.ismarried=false;
+        console.log
+        
+    </script>
+</body>
+</html>

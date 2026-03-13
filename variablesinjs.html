@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data value types in JS</title>
+</head>
+<body>
+    <script>
+    // js data value types
+    // primitive ~ imutable-single value data types in js
+    //string,number,boolean,undefined,null.bignit and symbol
+    
+    //string
+    var myname="vikash singh";
+    console.log(myname);
+    //number
+    var mymob=8840776578;
+    console.log(myname+"mobile number is"+mymob);
+    //boolean
+    var ismarried=false;
+    console.log(myemail);
+    console.log(typeof(myemail));
+    //null
+    var myaddress=null;
+    console.log(myaddress);
+    console.log(typeof(myaddress));
+    //bignit
+    var mynum=Bigint(748368927469234);
+    console.log(mynum);
+    //symbol
+    var var1=symbol("vikash");
+    var var2=symbol("vikash");
+    console.log(var1==var2);
+
+    //reference type(object)--mutable in memory and keep the data in key value pair
+    //object{},function{},array{}
+    let myinfo={
+        name:"prabhat",
+        age:23,
+        ismarried:false,
+        address:"delhi-21",
+        branch:"cse",
+        section:23,
+    };
+    console.log(myinfo);
+    console.log(myinfo.name);
+
+    //object length
+    var keys=object.keys(myinfo);
+    console.log(key.length);
+
+    //function
+    function cal(){
+        var num1=45;
+        var num2=40;
+        var add=num1+num2;
+        console.log("addition of two number is"+add);
+    }
+    cal();
+
+    //array
+    let studentlist=["stu1","stu2","stu3","stu4"];
+    console.log(studentlist[0]);
+    //for different data types 
+    let stu1=["vikash",23,false,"gzb","cse",null,18];
+    console.log(stu1);
+    console.log(stu1.length);
+
+    //to iterate array member
+    for(let i=0;i<stu.length;i++){
+        console.log(stu[i]);
+    }
+
+    </script>
+</body>
+</html>
